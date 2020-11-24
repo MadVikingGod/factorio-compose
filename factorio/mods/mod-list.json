@@ -1,0 +1,21 @@
+
+{
+  "mods": 
+  [
+    
+    {
+      "name": "base",
+      "enabled": true
+    },
+    
+    {
+      "name": "graftorio",
+      "enabled": true
+    },
+    
+    {
+      "name": "graftorio2",
+      "enabled": true
+    }
+  ]
+}

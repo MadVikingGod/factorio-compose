@@ -1,0 +1,31 @@
+version: '2'
+services:
+  factorio:
+    # build: ./factorio-docker
+    image: factoriotools/factorio
+    ports:
+     - "34197:34197/udp"
+     - "27015:27015/tcp"
+    volumes:
+     - ./factorio:/factorio
+  exporter:
+    image: prom/node-exporter
+    command: --collector.textfile.directory=/textfiles
+    volumes:
+      - ./factorio/script-output/graftorio:/textfiles # Linux
+    ports:
+      - 9100
+  prometheus:
+    image: prom/prometheus
+    volumes:
+      - ./data/prometheus:/prometheus
+      - ./data/prometheus.yml:/etc/prometheus/prometheus.yml
+    ports:
+      - 9090:9090
+    user: "root"
+  grafana:
+    image: grafana/grafana
+    volumes:
+      - ./data/grafana:/var/lib/grafana
+    ports:
+      - 3000:3000

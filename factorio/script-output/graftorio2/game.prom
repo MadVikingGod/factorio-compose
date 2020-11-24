@@ -1,0 +1,60 @@
+# HELP factorio_tick game tick
+# TYPE factorio_tick gauge
+factorio_tick 40440
+
+# HELP factorio_item_production_input items produced
+# TYPE factorio_item_production_input gauge
+factorio_item_production_input{force="player",name="coal"} 74
+factorio_item_production_input{force="player",name="iron-ore"} 67
+factorio_item_production_input{force="player",name="stone-brick"} 2
+factorio_item_production_input{force="player",name="iron-plate"} 66
+factorio_item_production_input{force="player",name="iron-gear-wheel"} 18
+factorio_item_production_input{force="player",name="burner-inserter"} 5
+factorio_item_production_input{force="player",name="transport-belt"} 20
+factorio_item_production_input{force="player",name="stone-furnace"} 1
+factorio_item_production_input{force="player",name="burner-mining-drill"} 1
+factorio_item_production_input{force="player",name="wooden-chest"} 1
+
+# HELP factorio_item_production_output items consumed
+# TYPE factorio_item_production_output gauge
+factorio_item_production_output{force="player",name="wood"} 3
+factorio_item_production_output{force="player",name="coal"} 29
+factorio_item_production_output{force="player",name="stone"} 9
+factorio_item_production_output{force="player",name="iron-ore"} 67
+factorio_item_production_output{force="player",name="iron-plate"} 54
+factorio_item_production_output{force="player",name="iron-gear-wheel"} 18
+factorio_item_production_output{force="player",name="stone-furnace"} 1
+
+
+
+
+
+# HELP factorio_entity_build_count_input entities placed
+# TYPE factorio_entity_build_count_input gauge
+factorio_entity_build_count_input{force="player",name="burner-mining-drill"} 4
+factorio_entity_build_count_input{force="player",name="stone-furnace"} 1
+factorio_entity_build_count_input{force="player",name="burner-inserter"} 8
+factorio_entity_build_count_input{force="player",name="transport-belt"} 23
+factorio_entity_build_count_input{force="player",name="wooden-chest"} 1
+
+# HELP factorio_entity_build_count_output entities removed
+# TYPE factorio_entity_build_count_output gauge
+factorio_entity_build_count_output{force="player",name="crash-site-spaceship"} 1
+factorio_entity_build_count_output{force="player",name="rock-big"} 1
+factorio_entity_build_count_output{force="player",name="burner-mining-drill"} 2
+factorio_entity_build_count_output{force="player",name="burner-inserter"} 3
+factorio_entity_build_count_output{force="player",name="transport-belt"} 3
+factorio_entity_build_count_output{force="player",name="dead-grey-trunk"} 1
+
+
+
+
+
+
+
+
+
+
+
+
+
